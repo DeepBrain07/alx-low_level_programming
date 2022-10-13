@@ -6,6 +6,7 @@
  */
 int main(void)
 {
-	putc("and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", stderr);
-	return (0);
+	char c [] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
+	write(2, c, 100);
+	return (1);
 }
