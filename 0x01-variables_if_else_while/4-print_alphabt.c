@@ -12,7 +12,7 @@ int main(void)
 	for  (i = 97; i < 123; i++)
 	/*this prints all aplphabets from a-z*/
 	{
-		if (i == 113 | i == 101)
+		if ((i == 113) | (i == 101))
 			/*prints all alphabets from a-z except q and e*/
 		{
 			continue;
