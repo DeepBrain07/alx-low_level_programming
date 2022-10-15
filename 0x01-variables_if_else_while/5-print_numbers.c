@@ -13,7 +13,7 @@ int main(void)
 	for (i = 0; i < 10; i++)
 		/*prints all numbers from 0-10*/
 	{
-		printf("%d",i);;
+		printf("%d",i);
 	}
 	printf("\n");
 
