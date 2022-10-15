@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/*main - prints alphabets a-z and A-Z
+/**
+ * main - prints alphabets a-z and A-Z
  *
  * Return: Always (0) (Success)
  */
