@@ -13,6 +13,7 @@ int main(void)
 
 	while (a < 58)
 	{
+		b = 48;
 		while (b < 58)
 		{
 			if ((a == b) & (b > a))
@@ -34,6 +35,7 @@ int main(void)
 		}
 		a++;
 	}
+	putchar(10)
 
 	return (0);
 }
