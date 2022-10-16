@@ -18,13 +18,12 @@ int main(void)
 		{
 			putchar(i);
 			putchar(44);
-			putchar(32);
 		}
 		else
 		{
 			putchar(i);
-			putchar(32);
 		}
+		putchar(32);
 	}
 
 	return (0);
