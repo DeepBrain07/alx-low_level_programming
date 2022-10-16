@@ -23,8 +23,9 @@ int main(void)
 		else
 		{
 			putchar(i);
+			putchar(32);
 		}
 	}
 
 	return (0);
-}	
+}
