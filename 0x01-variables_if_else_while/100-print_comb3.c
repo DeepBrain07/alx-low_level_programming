@@ -24,6 +24,11 @@ int main(void)
 				{
 					break;
 				}
+				else
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
 			b++;
 		}
