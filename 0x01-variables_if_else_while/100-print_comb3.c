@@ -20,7 +20,7 @@ int main(void)
 			{
 				putchar(a);
 				putchar(b);
-				if (a == 57 && b == 56)
+				if (a == 56 && b == 55)
 				{
 					break;
 				}
