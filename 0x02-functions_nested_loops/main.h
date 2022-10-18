@@ -1,4 +1,5 @@
-char _putchar(char input)
+#include <stdio.h>
+char _putchar(char input[])
 {
-	return (printf("%c\n", input));
+	return (printf("%s\n", input));
 }
