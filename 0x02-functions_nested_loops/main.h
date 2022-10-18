@@ -1,4 +1,4 @@
 char _putchar(char input)
 {
-	printf("%c\n", input);
+	return (printf("%c\n", input));
 }
