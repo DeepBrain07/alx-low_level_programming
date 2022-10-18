@@ -6,4 +6,4 @@
  *
  * Return: Always (0) (Success)
  */
-_putchar(_putchar);
+_putchar(_putchar\n);

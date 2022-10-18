@@ -1,4 +1,4 @@
 void _putchar(char input)
 {
-	return (write(1, input\n, 1));
+	return (fwrite(1, input, 1));
 }
