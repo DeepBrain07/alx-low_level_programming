@@ -5,7 +5,6 @@
  * _islower - tells if a letter is in lower case
  *
  *@c: the character in ASCII code
- * 
  * Return: returns 1 is in lower case, else 0
  */
 int _islower(int c)
