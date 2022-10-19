@@ -2,7 +2,9 @@
 #include <ctype.h>
 
 /**
- * _islower - tells if a number is in lower case
+ * _islower - tells if a letter is in lower case
+ *
+ * Return: returns 1 is in lower case, else 0
  */
 int _islower(int c)
 {
