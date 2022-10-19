@@ -1,1 +1,1 @@
-char _putchar(char input[])
+char _putchar(char c)
