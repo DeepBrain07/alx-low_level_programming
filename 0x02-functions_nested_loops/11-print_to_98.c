@@ -4,7 +4,7 @@
  * print_to_98 - prints natural numbers from n to 98
  *
  * @n: must be an integer
- *Return: returns (0)
+ *Return: returns nothing
  */
  void print_to_98(int n)
 {
@@ -22,6 +22,4 @@
 		}
 	}
 	_putchar('\n');
-
-	return (0);
 }
