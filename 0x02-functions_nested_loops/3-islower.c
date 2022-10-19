@@ -6,12 +6,5 @@
  */
 int _islower(int c)
 {
-	if (islower(c) > 0)
-	{
-		return (_putchar(49));
-	}
-	else
-	{
-		return (_putchar(48));
-	}
+	return (islower(c));
 }
