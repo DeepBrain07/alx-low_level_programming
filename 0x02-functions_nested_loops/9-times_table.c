@@ -18,14 +18,11 @@ void times_table(void)
 			if (r < 10)
 			{
 				_putchar(r + 48);
-				if (y == 9)
-				{
-					break;
-				}
-				else
+				if (y < 9)
 				{
 					_putchar(',');
 					_putchar(' ');
+					_putchar('  ');
 				}
 			}
 			else
@@ -33,13 +30,9 @@ void times_table(void)
 				int a = r / 10;
 				int b = r % 10;
 				
-				_putchar(a + 48);		
+				_putchar(a + 48);
 				_putchar(b + 48);
-				if (y == 9)
-				{
-					break;
-				}
-				else
+				if (y < 9)
 				{
 					_putchar(',');
 					_putchar(' ');
