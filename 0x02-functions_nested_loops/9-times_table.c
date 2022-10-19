@@ -12,13 +12,13 @@ void times_table(void)
 	for (x = 0; x < 10; x++)
 	{
 		_putchar(48);
-		_putchar(',');
 		for (y = 1; y < 10; y++)
 		{
 			int r = x * y;
 			
 			if ( r < 10)
 			{
+				_putchar(',');
 				_putchar(' ');
 				_putchar(' ');
 				_putchar(r + 48);
@@ -28,6 +28,7 @@ void times_table(void)
 				int a = r / 10;
 				int b = r % 10;
 
+				_putchar(',');
 				_putchar(' ');
 				_putchar(a + 48);
 				_putchar(b + 48);
