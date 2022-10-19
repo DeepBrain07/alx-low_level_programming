@@ -8,25 +8,18 @@ int print_sign(int n)
 {
 	if ( n > 0)
 	{
-		return (_putchar('+'));
-		return (_putchar(','));
-		return (_putchar(' '));
-		return (_putchar(49));
+		_putchar(43);
+		return (1);
 	}
 	else if (n < 0)
 	{
-		return (_putchar('-'));
-		return (_putchar(','));
-		return (_putchar(' '));
-		return (_putchar('-'));
-		return (_putchar(49));
+		_putchar(45);
+		return (-1);
 	}
 	else
 	{
-		return (_putchar(48));
-		return (_putchar(','));
-		return (_putchar(' '));
-		return (_putchar(48));
+		_putchar(48);
+		return (0);
 	}
 	return (0);
 }
