@@ -1,28 +1,36 @@
-#include "main.h"
+nclude "main"
 
-/**
- * jack_bauer - prints out every minute of the day of Jack Bauer
- */
-void jack_bauer(void)
+void times_table(void)
 {
-	int x1, x2, y1, y2;
+	int x, y1, y2;
 
-	for (x1 = 0; x1 < 3; x1++)
+	for (x = 0; x < 25; x++)
 	{
-		for (x2 = 0; x2 < 4; x2++)
+		for (y1 = 0; y1 < 6; y1++)
 		{
-			for (y1 = 0; y1 < 6; y1++)
+			for (y2 = 0; y2 < 10; y2++)
 			{
-				for (y2 = 0; y2 < 10; y2++)
+				if (x < 10)
 				{
-					_putchar(x1 + 48);
-					_putchar(x2 + 48);
+					_putchar(48);
+					_putchar(x + 48);
 					_putchar(':');
 					_putchar(y1 + 48);
 					_putchar(y2 + 48);
-					_putchar(10);
+					_putchar('\n');
+				}
+				else
+				{
+					int a = x / 10;
+					int b = x % 10;
+					_putchar(a + 48);
+					_putchar(b + 48);
+					_putchar(':');
+					_putchar(y1 + 48);
+					_putchar(y2 + 48);
+					_putchar('\n');
 				}
 			}
 		}
 	}
-}
+}	
