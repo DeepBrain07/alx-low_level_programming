@@ -14,9 +14,8 @@ void times_table(void)
 		_putchar(48);
 		for (y = 1; y < 10; y++)
 		{
-			int r = x * y;
-			
-			if ( r < 10)
+			int r = x * y;			
+			if (r < 10)
 			{
 				_putchar(',');
 				_putchar(' ');
