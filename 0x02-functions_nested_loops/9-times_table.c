@@ -18,7 +18,7 @@ void times_table(void)
 			if (r < 10)
 			{
 				_putchar(r + 48);
-				if (r = 9)
+				if (y == 9)
 				{
 					break;
 				}
@@ -35,7 +35,7 @@ void times_table(void)
 				
 				_putchar(a + 48);		
 				_putchar(b + 48);
-				if (y = 9)
+				if (y == 9)
 				{
 					break;
 				}
