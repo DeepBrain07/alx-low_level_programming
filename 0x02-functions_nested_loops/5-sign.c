@@ -2,11 +2,12 @@
 /**
  * print_sign - prints the sign of a number
  *
+ * &n: the input number as an integer
  * Return: returns the sign
  */
 int print_sign(int n)
 {
-	if ( n > 0)
+	if (n > 0)
 	{
 		_putchar(43);
 		return (1);
