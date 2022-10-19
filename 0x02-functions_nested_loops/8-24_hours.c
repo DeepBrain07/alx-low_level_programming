@@ -1,4 +1,4 @@
-nclude "main"
+include "main"
 
 void times_table(void)
 {
