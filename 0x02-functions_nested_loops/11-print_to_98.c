@@ -4,7 +4,7 @@
 /**
  * print_to_98: prints real numbers from n to 98
  *
- * n: must be an integer
+ *@ n: must be an integer
  * Return: returns nothing
  */
 void print_to_98(int n)
@@ -25,9 +25,9 @@ void print_to_98(int n)
 			}
 		}
 	}
-	if (n > 98)
+	else if (n > 98)
 	{
-		for (x = n; x > 98; x--)
+		for (x = n; x > 99; x--)
 		{
 			if (x != 98)
 			{
@@ -39,4 +39,7 @@ void print_to_98(int n)
 			}
 		}
 	}
+	else if (n == 98)
+	{
+		printf("%d\n", n);
 }
