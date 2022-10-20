@@ -8,10 +8,10 @@
  */
 void print_times_table(int n)
 {
-	for (n = 0; n < 15; n++)
+	for (x = 0; x < n; x++)
 	{
 		_putchar(48);
-		for (n = 1; n < 15; n++)
+		for (x = 1; x < n; x++)
 		{
 			int r = n * n;
 
