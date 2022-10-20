@@ -13,7 +13,7 @@ int _isupper(int c)
 	{
 		return (1);
 	}
-	else
+	else (c > 96 && c < 123)
 	{
 		return (0);
 	}
