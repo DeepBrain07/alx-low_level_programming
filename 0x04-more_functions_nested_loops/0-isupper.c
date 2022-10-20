@@ -11,10 +11,10 @@ int _isupper(int c)
 {
 	if (c > 64 && c < 91)
 	{
-		return (1);
+		return (_putchar(49));
 	}
 	else (c > 96 && c < 123)
 	{
-		return (0);
+		return (_putchar(48));
 	}
 }
