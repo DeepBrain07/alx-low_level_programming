@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * print_to_98: prints real numbers from n to 98
+ * print_to_98 - prints real numbers from n to 98
  *
  *@n: must be an integer
  * Return: returns nothing
