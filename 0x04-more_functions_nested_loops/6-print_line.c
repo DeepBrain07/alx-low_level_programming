@@ -2,7 +2,6 @@
 
 /**
 *print_line - prints line(s)
-*
 *@n: an integer
 *Return: nothing
 */
