@@ -5,15 +5,19 @@
 *@s: a string
 *Return: nothing
 */
-void rev_string(char *str)
+void rev_string(char *s)
 {
 	int i, counter;
-	
+	char src[100000];
 	counter = 0;
-	for (i = 0; str[i]; i++)
+
+	for (i = 0; s[i]; i++)
 	{
-		counter += 1;
+		src[i] = s[i];
+		counter = counter + 1;
 	}
 	for (i = counter - 1; i > -1; i--)
 	{
-		
+		s[i] = src[i];
+	}
+} 
