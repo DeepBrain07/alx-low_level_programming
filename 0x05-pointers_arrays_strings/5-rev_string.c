@@ -9,8 +9,8 @@ void rev_string(char *s)
 {
 	int i, counter;
 	char src[100000];
-	counter = 0;
 
+	counter = 0;
 	for (i = 0; s[i]; i++)
 	{
 		src[i] = s[i];
