@@ -1,5 +1,4 @@
 #include "main.h"
-#include <string.h>
 
 /**
 *_strcpy - copies a string
@@ -9,7 +8,12 @@
 */
 char *_strcpy(char *dest, char *src)
 {
-	strcpy(*dest, *src);
+	int i, counter;
 
+	counter = 0;
+	for (i = 0; src[i]; i++)
+	{
+		dest[i] = src[i];
+	}
 	return (dest);
 }
