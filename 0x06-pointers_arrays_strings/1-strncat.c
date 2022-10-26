@@ -6,7 +6,7 @@
 *@src: source
 *@n: number of byte(s)
 *Result: dest
-*/
+i*/
 char *_strncat(char *dest, char *src, int n)
 {
 	int i, j, counter;
@@ -16,6 +16,7 @@ char *_strncat(char *dest, char *src, int n)
 	{
 		counter = counter + 1;
 	}
+	
 	for (j = 0; j < n; j++)
 	{
 		dest[counter + j] = src[j];
