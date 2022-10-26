@@ -13,12 +13,12 @@ char *leet(char *str)
 		j = str[i];
 		if (j == 97 || j == 65)
 		{
-			j == 4 + 48;
+			j = 4 + 48;
 			str[i] = j;
 		}
 		else if (j == 101 || j == 69)
 		{
-			j == 3 + 48;
+			j = 3 + 48;
 			str[i] = j;
 		}
 		else if (j == 111 || j == 79)
