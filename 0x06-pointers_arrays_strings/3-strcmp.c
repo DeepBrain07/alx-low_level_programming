@@ -7,14 +7,7 @@
 */
 int _strcmp(char *s1, char *s2)
 {
-	int temp1, temp2;
-	int i, j, counter;
-
-	counter = 0;
-	for (i = 0; s1[i]; i++)
-	{
-		counter = counter + 1;
-	}
+	int i, j, temp1, temp2;
 
 	for (j = 0; s1[j]; j++)
 	{
@@ -30,7 +23,7 @@ int _strcmp(char *s1, char *s2)
 			return (15);
 			break;
 		}
-		if (s1[j] == '\0' || s2[j] == '\0')
+		if (s1[j] == '\0' && s2[j] == '\0')
 		{
 			return (0);
 			break;
