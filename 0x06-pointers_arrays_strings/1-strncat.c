@@ -4,7 +4,7 @@
 *@dest: destination
 *@src: source
 *@n: number of byte(s)
-*Result: Dest
+*Return: Dest
 */
 char *_strncat(char *dest, char *src, int n)
 {
