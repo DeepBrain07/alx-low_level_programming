@@ -18,6 +18,13 @@ char *_strcat(char *dest, char *src)
 	for (j = 0; src[j]; j++)
 	{
 		dest[counter + j] = src[j];
+		if (src[j] == '\0')
+		{
+			break;
+		}
+	}
+	return (dest);
+}
 	}
 	return (dest);
 }
