@@ -3,7 +3,7 @@
 *_strncpy - copies a string
 *@dest: destination
 *@src: source
-*@n: number of byt(s)
+*@n: number of byte(s)
 *Return: Dest
 */
 char *_strncpy(char *dest, char *src, int n)
@@ -22,7 +22,7 @@ char *_strncpy(char *dest, char *src, int n)
 		}
 	}
 
-	for (i = 0; i < n; i++)
+	for (; i < n; i++)
 	{
 		dest[i] = '\0';
 	}
