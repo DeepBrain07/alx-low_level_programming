@@ -7,34 +7,16 @@
 char *leet(char *str)
 {
 	int i, j;
+	int low_letters = {97, 101, 111, 116, 108};
+	int up_letters = {65, 69, 79, 84, 76};
+	int num = {4, 3, 0, 7, 1};
 
 	for (i = 0; str[i]; i++)
 	{
 		j = str[i];
-		if (j == 97 || j == 65)
+		if (j == low_letters[i] && j == up_letters[i])
 		{
-			j = 4 + 48;
-			str[i] = j;
-		}
-		else if (j == 101 || j == 69)
-		{
-			j = 3 + 48;
-			str[i] = j;
-		}
-		else if (j == 111 || j == 79)
-		{
-			j = 0 + 48;
-			str[i] = j;
-		}
-		else if (j == 116 || j == 84)
-		{
-			j = 7 + 48;
-			str[i] = j;
-		}
-		else if (j == 108 || j == 76)
-		{
-			j = 1 + 48;
-			str[i] = j;
+			j = num + 48;
 		}
 	}
 	return (str);
