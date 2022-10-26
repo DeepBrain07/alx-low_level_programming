@@ -7,26 +7,15 @@
 */
 int _strcmp(char *s1, char *s2)
 {
-	int j, temp1, temp2;
+	int j, i;
 
-	for (j = 0; s1[j]; j++)
+	while (j == 0)
 	{
-		temp1 = s1[j];
-		temp2 = s2[j];
-		if (temp1 < temp2)
-		{
-			return (-15);
-			break;
-		}
-		else if (temp1 > temp2)
-		{
-			return (15);
-			break;
-		}
 		if (s1[j] == '\0' && s2[j] == '\0')
 		{
-			return (0);
 			break;
 		}
+		i = s1[j] - s2[j];
 	}
+	return (i);
 }
