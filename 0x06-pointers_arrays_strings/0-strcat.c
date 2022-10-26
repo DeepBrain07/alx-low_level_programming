@@ -4,6 +4,7 @@
 *_strcat - concatenates two strings
 *@dest: a string
 *@src: a string
+*Return: Dest
 */
 char *_strcat(char *dest, char *src)
 {
@@ -18,6 +19,5 @@ char *_strcat(char *dest, char *src)
 	{
 		dest[counter + j] = src[j];
 	}
-	
 	return (dest);
 }
