@@ -4,6 +4,7 @@
 *@str: a string
 *Return: a string
 */
+
 char *rot13(char *str)
 {
 	int i, l;
@@ -20,5 +21,6 @@ char *rot13(char *str)
 			}
 		}
 	}
+
 	return (str);
 }
