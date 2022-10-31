@@ -3,6 +3,7 @@
 *_strstr - locates a substring
 *@haystack: a string
 *@needle: a string
+*Return: a pointer
 */
 char *_strstr(char *haystack, char *needle)
 {
