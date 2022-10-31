@@ -18,8 +18,8 @@ char *_strchr(char *s, char c)
 				s[k] = s[j];
 				k++;
 			}
-			s[k] = '\0';
 			return (s);
 		}
 	}
+	return ('\0');
 }
