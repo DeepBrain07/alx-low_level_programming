@@ -20,11 +20,11 @@ char *_strpbrk(char *s, char *accept)
 					s[l] = s[j];
 					l++;
 				}
-				s[l] = '\0';
+				return (s);
 				break;
 			}
 		}
 		break;
 	}
-	return (s);
+	return ('\0');
 }
