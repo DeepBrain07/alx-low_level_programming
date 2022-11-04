@@ -13,25 +13,28 @@ int main(int argc, char *argv[])
 	l = 0;
 	if (argc < 2)
 		printf("%d\n", 0);
-	for (i = 1; i < argc; i++)
+	else
 	{
-		j = atoi(argv[i]);
-		for (k = 0; k < 10; k++)
+		for (i = 1; i < argc; i++)
 		{
-			if (j != k)
+			j = atoi(argv[i]);
+			for (k = 0; k < 10; k++)
 			{
-				printf("Error\n");
-				return (1);
-				i = argc;
-				break;
-			}
-			else
-			{
-				l = l + j;
-				break;
+				if (j != k)
+				{
+					printf("Error\n");
+					i = argc;
+					return (1);
+					break;
+				}
+				else
+				{
+					l = l + j;
+					break;
+				}
 			}
 		}
+		printf("%d\n", l);
+		return (0);
 	}
-	printf("%d\n", l);
-	return (0);
 }
