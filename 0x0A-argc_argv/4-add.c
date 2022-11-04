@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 /**
 *main - adds numbers
 *@argc: argument count
@@ -8,33 +9,21 @@
 */
 int main(int argc, char *argv[])
 {
-	int i, j, k, l;
+	int i, j, l;
 
 	l = 0;
-	if (argc < 2)
-		printf("%d\n", 0);
-	else
+	for (i = 0; i < argc; i++)
 	{
-		for (i = 1; i < argc; i++)
+		for (j = 0; argv[i][j] != '\0'; j++)
 		{
-			j = atoi(argv[i]);
-			for (k = 0; k < 10; k++)
+			if (!isdigit(argv[i][j]))
 			{
-				if (j != k)
-				{
-					printf("Error\n");
-					i = argc;
-					return (1);
-					break;
-				}
-				else
-				{
-					l = l + j;
-					break;
-				}
+				printf("Error\n");
+				return (1);
 			}
 		}
-		printf("%d\n", l);
-		return (0);
+		l += atoi(argv[i]);
 	}
+	printf("%d\n", l);
+	return (0);
 }
