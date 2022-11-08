@@ -33,24 +33,25 @@ char *str_concat(char *s1, char *s2)
 			*(str + i) = s1[i];
 		return (str);
 	}
-	else if (s1 == NULL && s2 == NULL)
-		return (10);
-	count = count1 + count2 + 1;
-	str = malloc(sizeof(char) * count);
-	for (i = 0; s1[i]; i++)
+	else
 	{
-		if (i == (count1 - 1))
+		count = count1 + count2 + 1;
+		str = malloc(sizeof(char) * count);
+		for (i = 0; s1[i]; i++)
 		{
-			*(str + k) = s1[i];
-			for (j = 0; s2[j]; j++)
+			if (i == (count1 - 1))
 			{
-				k++;
-				*(str + k) = s2[j];
+				*(str + k) = s1[i];
+				for (j = 0; s2[j]; j++)
+				{
+					k++;
+					*(str + k) = s2[j];
+				}
+				break;
 			}
-			break;
+			*(str + k) = s1[i];
+			k++;
 		}
-		*(str + k) = s1[i];
-		k++;
+		return (str);
 	}
-	return (str);
 }
