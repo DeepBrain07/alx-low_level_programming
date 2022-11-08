@@ -18,6 +18,6 @@ char *_strdup(char *str)
 		counter += 1;
 	myArray = (char *) malloc(sizeof(char) * (counter + 1));
 	for (i = 0; str[i]; i++)
-		*(myArray + i) = str[i];
+		myArray[i] = str[i];
 	return (myArray);
 }
