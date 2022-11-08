@@ -26,6 +26,8 @@ char *str_concat(char *s1, char *s2)
 	count = count1 + count2 + 1;
 	str = malloc(sizeof(char) * count);
 	if (str == NULL)
+	{
+		free(str);
 		return (NULL);
 	for (i = 0; s1[i]; i++)
 	{
@@ -34,8 +36,8 @@ char *str_concat(char *s1, char *s2)
 	}
 	for (j = 0; s2[j]; j++)
 	{
-		k++;
 		str[k] = s2[j];
+		k++;
 	}
 	return (str);
 }
