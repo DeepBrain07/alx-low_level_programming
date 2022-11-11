@@ -7,13 +7,13 @@
 *main - multiplies two numbers
 *@argc: arguement count
 *@argv: arguement vector
-*Return: nothing
+*Return: '0' on success
 */
-void main(int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	int ans;
 
-	if (argc != 2)
+	if (argc != 3)
 	{
 		printf("Error\n");
 		exit(98);
@@ -25,4 +25,5 @@ void main(int argc, char *argv[])
 	}
 	ans = (atoi(argv[1]) * atoi(argv[2]));
 	printf("%d\n", ans);
+	return (0);
 }
