@@ -29,10 +29,16 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	str = malloc(count1 + l + 1);
 	if (str == NULL)
 		return (NULL);
-	for (i = 0; s1[i]; i++, k++)
+	for (i = 0; s1[i]; i++)
+	{
 		str[k] = s1[i];
-	for (i = 0; i < l; i++, k++)
+		k++;
+	}
+	for (i = 0; i < l; i++)
+	{
 		str[k] = s2[l];
+		k++;
+	}
 	str[k] = '\0';
 	return (str);
 }
