@@ -1,5 +1,4 @@
 #include "variadic_functions.h"
-#include <string.h>
 
 /**
 *print_all - prints anything
@@ -9,38 +8,50 @@
 */
 void print_all(const char * const format, ...)
 {
-	unsigned int i, j;
+	unsigned int i, j, c;
 	char formatList[5] = "cifs";
+	char *str;
 	va_list list;
 
 	va_start(list, format);
 
 	i = 0;
-	while (i <= strlen(format))
+	while (format && format[i])
 	{
 		j = 0;
-		while (j < 4)
+		while (formatList[j])
 		{
-			if (format[i] == formatList[j])
-				switch (format[i])
-				{
-					case 'c':
-						printf("%c", va_arg(list, int));
-						break;
-					case 'i':
-						printf("%d", va_arg(list, int));
-						break;
-					case 'f':
-						printf("%f", va_arg(list, double));
-						break;
-					case 's':
-						printf("%s", va_arg(list, char *));
-						break;
-				}
-			if (i != strlen(format))
+			if (format[i] == formatList[j] && c)
+			{
 				printf(", ");
+				break;
+			}
 			j++;
-			break;
+		}
+		switch (format[i])
+		{
+			case 'c':
+				printf("%c", va_arg(list, int));
+				c = 1;
+				break;
+			case 'i':
+				printf("%d", va_arg(list, int));
+				c = 1;
+				break;
+			case 'f':
+				printf("%f", va_arg(list, double));
+				c = 1;
+				break;
+			case 's':
+				str = va_arg(list, char *);
+				c = 1;
+				if (str)
+				{
+					printf("%s", str);
+					break;
+				}
+				printf("(nil)");
+				break;
 		}
 		i++;
 	}
