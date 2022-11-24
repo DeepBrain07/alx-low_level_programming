@@ -1,6 +1,7 @@
 #include "lists.h"
 /**
-*print_list - prints all the elements of a list_t
+*print_list - prints all the elements
+*of a list_t list
 *@h: temporal pointer
 *Return: number of nodes
 */
