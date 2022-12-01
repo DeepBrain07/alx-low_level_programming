@@ -3,6 +3,6 @@
 
 #include <stdlib.h>
 
-nsigned int binary_to_uint(const char *b);
+unsigned int binary_to_uint(const char *b);
 
 #endif
