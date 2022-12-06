@@ -11,12 +11,12 @@ void error_out(int file_from, int file_to, char *argv[])
 {
 	if (file_from < 0)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't read from file %s", argv[1]);
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 		exit(98);
 	}
 	if (file_to < 0)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't write to file %s", argv[2]);
+		dprintf(STDERR_FILENO, "Error: Can't write to file %s\n", argv[2]);
 		exit(99);
 	}
 }
